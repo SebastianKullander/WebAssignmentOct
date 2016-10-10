@@ -4,6 +4,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model System.Collections.Generic.List<WebAssignmentOct.Models.Experience>
+
 <body>
     <div class="container">
         <div class="jumbotron">
@@ -12,6 +14,19 @@
                 Mina tidigare utbildningar är gränssnittsdesign, webbutveckling, webbserverutveckling och programmering 1. 
                 Just nu pluggar jag ett fjärde år på Östra Gymnasiet.
             </p1>
+
+            <h2>
+                Utbildningar:
+            </h2>
+
+            @foreach (var item in Model)
+            {
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+            }
 
             <hr class="m-y-2">
             <p class="lead">
