@@ -9,7 +9,7 @@ namespace WebAssignmentOct.Models
     {
         public Experience()
         {
-
+            
         }
 
         public string education { get; set; }

@@ -1,32 +1,29 @@
-﻿
+﻿@model System.Collections.Generic.List<WebAssignmentOct.Models.Experience>
 @{
     ViewBag.Title = "About";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model System.Collections.Generic.List<WebAssignmentOct.Models.Experience>
+
 
 <body>
     <div class="container">
         <div class="jumbotron">
             <h1>Om mig</h1>
-            <p1>
-                Mina tidigare utbildningar är gränssnittsdesign, webbutveckling, webbserverutveckling och programmering 1. 
+            <p1> 
                 Just nu pluggar jag ett fjärde år på Östra Gymnasiet.
             </p1>
 
             <h2>
                 Utbildningar:
             </h2>
-
-            @foreach (var item in Model)
-            {
-                <ul>
-                    <li>
-                        <p></p>
-                    </li>
-                </ul>
-            }
+            
+            <ul>
+                @foreach (var item in Model)
+                {
+                    <li>@item.education | @item.period</li>
+                }
+            </ul>
 
             <hr class="m-y-2">
             <p class="lead">
