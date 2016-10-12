@@ -19,7 +19,7 @@
             </h2>
             
             <ul>
-                @foreach (var item in Model)
+                @foreach (var item in MyDataBase.Tables)
                 {
                     <li>@item.education | @item.period</li>
                 }

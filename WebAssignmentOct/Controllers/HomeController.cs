@@ -8,9 +8,11 @@ using WebAssignmentOct.Models;
 namespace WebAssignmentOct.Controllers
 {
     public class HomeController : Controller
+
     {
 
         private List<Experience> experiences;
+        T4DBEntities MyDataBase = new T4DBEntities();
 
         public HomeController() {
             experiences = new List<Experience>();
@@ -29,7 +31,7 @@ namespace WebAssignmentOct.Controllers
 
         public ActionResult About()
         {
-            return View(experiences);
+            return View(MyDataBase);
         }
 
         public ActionResult Contact()
