@@ -27,6 +27,7 @@ namespace WebAdmin
             string period = string.Empty;
 
             education = txbEducation.Text;
+            period = txbPeriod.Text;
 
             Table MyTable = new Table() { education = education, period = period };
 
@@ -37,6 +38,7 @@ namespace WebAdmin
             MyDataBase.SaveChanges();
 
             txbEducation.Text = null;
+            txbPeriod.Text = null;
 
             MessageBox.Show("Data saved to DB");
             

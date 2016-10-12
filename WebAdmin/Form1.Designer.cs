@@ -30,18 +30,19 @@
         {
             this.txbEducation = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.txbPeriod = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txbEducation
             // 
-            this.txbEducation.Location = new System.Drawing.Point(35, 58);
+            this.txbEducation.Location = new System.Drawing.Point(77, 42);
             this.txbEducation.Name = "txbEducation";
             this.txbEducation.Size = new System.Drawing.Size(100, 20);
             this.txbEducation.TabIndex = 0;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(35, 112);
+            this.btnAdd.Location = new System.Drawing.Point(90, 175);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 1;
@@ -49,11 +50,19 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // txbPeriod
+            // 
+            this.txbPeriod.Location = new System.Drawing.Point(77, 68);
+            this.txbPeriod.Name = "txbPeriod";
+            this.txbPeriod.Size = new System.Drawing.Size(100, 20);
+            this.txbPeriod.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.txbPeriod);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txbEducation);
             this.Name = "Form1";
@@ -67,6 +76,7 @@
 
         private System.Windows.Forms.TextBox txbEducation;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox txbPeriod;
     }
 }
 
