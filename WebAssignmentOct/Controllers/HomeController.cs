@@ -14,11 +14,11 @@ namespace WebAssignmentOct.Controllers
 
         public HomeController() {
             experiences = new List<Experience>();
-            experiences.Add(new Experience() { education = "Webbutveckling", period = "2014-2015" });
-            experiences.Add(new Experience() { education = "Digitalt skapande", period = "2014-2015" });
-            experiences.Add(new Experience() { education = "Gränssnittsdesign", period = "2014-2015" });
-            experiences.Add(new Experience() { education = "Webbserverprogrammering", period = "2015-2016" });
-            experiences.Add(new Experience() { education = "Programmering", period = "2015-2016" });
+            //experiences.Add(new Experience() { education = "Webbutveckling", period = "2014-2015" });
+            //experiences.Add(new Experience() { education = "Digitalt skapande", period = "2014-2015" });
+            //experiences.Add(new Experience() { education = "Gränssnittsdesign", period = "2014-2015" });
+            //experiences.Add(new Experience() { education = "Webbserverprogrammering", period = "2015-2016" });
+            //experiences.Add(new Experience() { education = "Programmering", period = "2015-2016" });
         }
 
         // GET: Home
