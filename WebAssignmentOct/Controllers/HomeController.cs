@@ -11,11 +11,11 @@ namespace WebAssignmentOct.Controllers
 
     {
 
-        private List<Experience> experiences;
+        //private List<Experience> experiences;
         T4DBEntities MyDataBase = new T4DBEntities();
 
         public HomeController() {
-            experiences = new List<Experience>();
+            //experiences = new List<Experience>();
             //experiences.Add(new Experience() { education = "Webbutveckling", period = "2014-2015" });
             //experiences.Add(new Experience() { education = "Digitalt skapande", period = "2014-2015" });
             //experiences.Add(new Experience() { education = "Gränssnittsdesign", period = "2014-2015" });
@@ -31,7 +31,7 @@ namespace WebAssignmentOct.Controllers
 
         public ActionResult About()
         {
-            return View(MyDataBase);
+            return View(new T4DBEntities().Tables.ToList());
         }
 
         public ActionResult Contact()

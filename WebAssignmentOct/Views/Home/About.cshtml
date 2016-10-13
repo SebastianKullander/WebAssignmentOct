@@ -1,4 +1,4 @@
-﻿@model System.Collections.Generic.List<WebAssignmentOct.Models.Experience>
+﻿@model List<Table>
 @{
     ViewBag.Title = "About";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -19,7 +19,7 @@
             </h2>
             
             <ul>
-                @foreach (var item in MyDataBase.Tables)
+                @foreach (var item in Model)
                 {
                     <li>@item.education | @item.period</li>
                 }
